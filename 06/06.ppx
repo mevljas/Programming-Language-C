@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="1.0">
+	<category name="param.c" />
+	<category name="Naloga1.c" />
+	<category name="Debugger">
+		<category name="Watches">
+			<property name="Watch1" type="string">s</property>
+		</category>
+	</category>
+	<category name="testSklada.c" />
+	<category name="sklad.c" />
+	<category name="Naloga2.c" />
+</settings>

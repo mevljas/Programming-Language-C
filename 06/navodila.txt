@@ -1,0 +1,38 @@
+program az delo s skaldom celih števil
+
+
+init (5) sklad s katerim alhko damo 5 števil, če hočeš dat 6, vrze error
+prazn.. i = -1
+push(7) ... i = 0
+push(3) ... I = 1
+i kaze na zadnji element
+pop() vrne trojko in i = 0
+isEmpty preer če je i == -1
+vrednost skalda izpiše vsebino sklada
+
+interaktivni program
+
+
+push, ko je sklad povh ali pop, ko je praze naj izpiše napako
+
+
+C)
+program imej dve datoteki
+ena datoteka za skal in ena za testsklada
+omogoči delo z več skladi
+razširi menu
+omogočaj poljubno šteivlo skaldov, na začetku uprašaj za št skladov
+en skald = en struct
+poterbuje tabelo in i
+dve sprmernljivki za en sklad
+5 skladov ... maloc za tabelo 5 structov
+
+
+2. naloga
+
+reverse polish notation
+dobimo vhod
+3 se da na skla
+ena se an na sklad
+ko pride + se vzame kar je na skladu zbriše vn in se sešteje ( 3+1) = 4 in se shran notr) 
+vsak oeoprato račuanja zadnja 2

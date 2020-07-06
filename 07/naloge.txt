@@ -1,0 +1,42 @@
+mamo datoteko
+notri je 15 vrstica
+v vaki vrstici je ime priimek in tel st
+vse so nizi
+preber si fgets
+razbij s string tokenizer
+dobimo 3 stringe vn
+zgneriraj strukturo
+za vaskega niza v strukturi mormo maloc narest ( ime ,priimek..) naredi malo za pravi size, ne 100!
+
+prebers velikost (n15)
+nrdis z malokom tabelo oseb veliost 15
+pol za vasko osebo maloc za ime, priimek ,...
+
+na konci izpisi kolko pomnilnika je bilo rezervirano
+
+
+
+Nalog 2:
+
+
+mergesort
+an vhod dobi tabelo
+mergesort( t, o, n-1)
+zracuan sredinot abele = zadnji elemnt - 1 polovica
+s = ( n-1-0+1)/2
+
+klices mergesort(t, 0, s)  //tabela nula do sredina
+in klices mergesort od sredine + 1 do n -1
+
+ko mas oba dela nrjena, pol jih zlijes
+nrdis novo tabelo
+poogleda kateri je majsi
+rabs dva pointerja
+za vsako polovco enga
+rekurzivni klic smega sebe
+
+
+cne naredi C)
+napises dva compratorja
+
+nrdi mergesort na koncu

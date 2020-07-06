@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="1.0">
+	<category name="gambler.c" />
+	<category name="01_krog.c" />
+	<category name="fibo.c" />
+	<category name="izpis.c" />
+	<category name="args.c" />
+	<category name="prvi.c" />
+</settings>

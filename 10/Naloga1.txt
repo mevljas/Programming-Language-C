@@ -1,0 +1,63 @@
+1.ob zagonu na zaslon izpisal pozdravno besedilo "Pozdravljen v programu SuperBash", tik pred izhodom iz programa pa "Nasvidenje".
+
+V datoteki shell.c sem na koncu funkcije static void run_startup_files () dodal vrstico:
+printf("Pozdravljen v programu SuperBash\n"); 
+ 
+Na koncu funkcije main() sem med klicom funkcije reader_ loop() in pred klicom funkcije exit_shell( last_command_exit_value) dodal vrstico: 
+printf("Nasvidenje\n");
+
+
+
+2.namesto sporočila "command not found" ob napačnem ukazu izpisal "ukaz ne obstaja"
+
+V datoteki execute_cmd.c sem vrstico:
+ 
+internal_error (_("%s: command not found"), pathname);
+ 
+zamenjal z 
+ 
+internal_error (_("%s: ukaz ne obstaja"), pathname);
+
+	
+	
+3.poleg ukaza "exit" za izhod iz lupine deloval tudi ukaz "konec"
+
+V datoteki builtins/mkbuiltins.c sem v tabelo dodal zapis "konec":
+ 
+char *special_builtins[] =
+{
+  ":", ".", "source", "break", "continue", "eval", "exec", "exit",
+  "export", "readonly", "return", "set", "shift", "times", "trap", "unset","konec",
+  (char *)NULL
+};
+ 
+ 
+ 
+ V datoteki lib/tilde/tilde.c sem v main metodi dodal primerjavo za vnos "konec":
+ 
+if ((strcmp (line, "done") == 0) ||
+	  (strcmp (line, "quit") == 0) ||
+	  (strcmp (line, "exit") == 0)) ||
+      (strcmp (line, "konec") == 0))
+	{
+	  done = 1;
+	  break;
+	}
+ 
+ 
+ 
+ 
+ V datoteki lib/readline/tilde.c sem v main metodi dodal primerjavo za vnos "konec":
+ 
+if ((strcmp (line, "done") == 0) ||
+	  (strcmp (line, "quit") == 0) ||
+	  (strcmp (line, "exit") == 0)) ||
+      (strcmp (line, "konec") == 0))
+	{
+	  done = 1;
+	  break;
+	}
+
+4.da bo ukaz "cd" deloval samo v primeru, da ciljni folder ne bo vseboval črke a; ob klicu, na primer, "cd programs" (ime "programs" vsebuje črko a) naj lupina izpiše "Can't change to target folder. I am allergic to ’a’"
+
+Tega nisem našel.
