@@ -1,5 +1,6 @@
 # Tasks - 7th day
-## Task 1: A phone book is written in the.txt file. In the first line there is information about the number of people, in all other lines there are people, one per line. The data in the row is separated by a colon. Read the data from the file in the table
+## Task 1: 
+A phone book is written in the.txt file. In the first line there is information about the number of people, in all other lines there are people, one per line. The data in the row is separated by a colon. Read the data from the file in the table
 
  person * persons;  
 
@@ -25,7 +26,7 @@ Each person in the table should take up **exactly as much memory** as is absolut
 
  
 
-Task 2:
+## Task 2:
 
 a) write a mergesort function that sorts the table of persons (the person is a structure from the previous task); one of the parameters of the function should determine the criteria according to which the data are edited (either by name or by surname),
 
